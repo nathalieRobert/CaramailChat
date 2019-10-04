@@ -1,4 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Caramail Live Chat
+
+This App was created based on :
+- The Live Chat App tutorial from **Code drip** https://www.youtube.com/watch?v=hiiaHyhhwBU
+- The Demo Chat App from **Ioana Ardelean** https://github.com/Ioanardelean/chat
+
+## Technologies
+- Reactjs,
+- Material UI, 
+- NodeJS,
+- Socket.io.
+
 
 ## Available Scripts
 
