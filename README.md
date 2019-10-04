@@ -1,5 +1,7 @@
 # Caramail Live Chat
 
+<img src="https://github.com/nathalieRobert/CaramailChat/blob/master/src/img/Lycos.jpg" width="450"/>
+
 This App was created based on :
 - The Live Chat App tutorial from **Code drip** https://www.youtube.com/watch?v=hiiaHyhhwBU
 - The Demo Chat App from **Ioana Ardelean** https://github.com/Ioanardelean/chat
