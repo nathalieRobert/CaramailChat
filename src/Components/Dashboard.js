@@ -9,16 +9,26 @@ import Chip from '@material-ui/core/Chip';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import {CTX} from './Store';
+import logo from '../img/Lycos.jpg';
 
 const useStyles = makeStyles(theme => ({
   root: {
-      margin: '50px',
+      margin: '5%',
+      marginLeft: '20%',
+      marginRight: '20%',
     padding: theme.spacing(3, 2),
   },
 
+  title: {
+    color: 'brown',
+    marginTop: '5%',
+
+},
+
   flex: {
    display: 'flex',
-   alignItems:'center'
+   alignItems:'center',
+   margin: '1%'
 },
 
 topicWindow: {
@@ -56,12 +66,17 @@ export default function Dashboard(){
     const [textValue, changeTextValue] = React.useState('');
 
     return(
-    <div>
+    <div >
+        <Typography className={classes.title} variant="h3" component="h3" align='center'>
+      
+                   <img src={logo} alt= 'logo' width='25%'/>
+                   
+        </Typography>
+
         <Paper className={classes.root}>
-                <Typography variant="h5" component="h5" align='center'>
-                    Caramail app
-                </Typography>
+                
                 <Typography variant="h6" component="h5" align='center'>
+             
                  {activeTopic}
                 </Typography>
         

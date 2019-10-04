@@ -4,15 +4,13 @@ import io from 'socket.io-client'
 export const CTX = React.createContext();
 
 const initState = {
-    general:[
+    General:[
         {from: 'Nathalie', msg: 'hey'},
         {from: 'Bob', msg: 'hey'},
         {from: 'Julie', msg: 'hey'},
     ],
 
-    topic2:[
-        {from: 'Nathalie', msg: 'hey'},
-        {from: 'Nathalie', msg: 'hey'},
+    Private:[
         {from: 'Nathalie', msg: 'hey'},
 
     ]
@@ -42,6 +40,7 @@ function reducer ( state, action){
 
 
 let socket;
+let nickname =prompt('enter your nickname');
 
 function SendChatAction(value){
 
@@ -60,11 +59,7 @@ export default function Store(props){
           });
     }
 
-
-    const user = 'nath' + Math.random(100).toFixed(2);
-
-   
-
+    const user = nickname;
 
     return(
         <CTX.Provider value={{allChats, SendChatAction, user }}>
